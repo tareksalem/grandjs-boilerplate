@@ -8,10 +8,6 @@ import { IResponse } from "grandjs/lib/common";
 export class ItemRouter extends Router{
     constructor(props) {
         super(props);
-        this.globalMiddleWares = [(req, rss, next) => {
-            console.log("ddd")
-            return next();
-        }]
     }
     services: {
         Item: ItemController
